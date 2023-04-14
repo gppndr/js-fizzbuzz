@@ -1,6 +1,6 @@
 const eleRow = document.querySelector(".row");
 
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 56; i++) {
   const square = document.createElement("div");
   square.classList.add("square");
   eleRow.append(square);
