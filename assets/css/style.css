@@ -8,8 +8,8 @@ html {
 :root {
   --bg-primary: #083b4c;
   --bg-square: #1389b2;
-  --bg-fizz: #bc6c25;
-  --bg-buzz: #0cd6a1;
+  --bg-buzz: #FFD166;
+  --bg-fizz: #0cd6a1;
   --bg-fizzBuzz: #F0466F;
 }
 /* reset rule */
@@ -25,27 +25,47 @@ body {
 }
 .container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-inline: auto;
 }
 h1 {
     color: white;
   font-size: 3rem;
   text-align: center;
+  margin: 2rem 0;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .square {
   display: flex;
   justify-content: center;
   align-items: center;
-  aspect-ratio: 1/1;
-  width: 175px;
-  height: 175px;
-  margin: 0.5rem;
-  font-size: 1.2rem;
+  aspect-ratio: 1/1; 
+  width: calc(100%/8);
+  margin: .5rem;
+  font-size: 1.1srem;
   font-weight: 700;
  background-color: var(--bg-square);
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+@media screen and (max-width: 575px){
+    .container{
+        max-width: 450px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .square{
+        font-size: .6rem;
+    }
+    
 }
