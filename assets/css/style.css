@@ -46,7 +46,7 @@ h1 {
   aspect-ratio: 1/1; 
   width: calc(100%/8);
   margin: .5rem;
-  font-size: 1.1srem;
+  font-size: 1.1rem;
   font-weight: 700;
  background-color: var(--bg-square);
 }
