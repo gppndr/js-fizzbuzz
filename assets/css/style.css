@@ -4,7 +4,14 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
-
+/* color palette */
+:root {
+  --bg-primary: #083b4c;
+  --bg-square: #1389b2;
+  --bg-fizz: #bc6c25;
+  --bg-buzz: #0cd6a1;
+  --bg-fizzBuzz: #F0466F;
+}
 /* reset rule */
 * {
   margin: 0;
@@ -14,27 +21,31 @@ html {
 
 /* general rules */
 body {
-  background-color: salmon;
-  color: white;
+  background-color:var(--bg-primary);
 }
-.container{
-    width: 80%;
-    max-width: 1200px;
-    margin-inline: auto;
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 h1 {
+    color: white;
   font-size: 3rem;
   text-align: center;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.square{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1/1;
-    background-color: lightseagreen;
-    color: white;
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 175px;
+  height: 175px;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+ background-color: var(--bg-square);
 }
